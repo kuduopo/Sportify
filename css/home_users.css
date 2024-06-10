@@ -1,0 +1,186 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.create-event-btn {
+    display: flex;
+    /* Делаем кнопку блочно-строчным элементом */
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.create-event-plus {
+    margin-right: 8px;
+}
+
+.create-event-text {
+    color: black;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.event-container p:last-child {
+    margin-bottom: 0px;
+}
+
+.event-history {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+option {
+    border-radius: 10px;
+}
+
+.select-sort {
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.created-events {
+    margin: 0 auto;
+}
+
+.joined-events {
+    margin: 0 auto;
+}
+
+.event p,
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+    margin-right: 5px;
+}
+
+.event p,
+h3:last-child {
+    margin-right: 0px;
+}
+
+.event img {
+    margin-right: 10px;
+}
+
+.event {
+    display: flex;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.event:last-child {
+    margin-bottom: 60px;
+}
+
+.expired-event {
+    background-color: #D4D4D4;
+    /* Серый цвет */
+}
+
+.active-event {
+    background-color: #5cff76;
+    /* Зеленый цвет */
+}
+
+.footer {
+    background-color: #eef0f6;
+    padding: 50px 0px 32px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__menu-definition {
+    padding-left: 43px;
+}
+
+.footer__menu-text {
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+.footer__menu-item {
+    margin-bottom: 19px;
+}
+
+.footer__menu-item:last-child {
+    margin-bottom: 0;
+}

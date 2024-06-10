@@ -1,0 +1,337 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #eef0f6;
+
+}
+
+.header__main {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.header__iner {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.logo__img {
+    height: 50px;
+    width: 150px;
+}
+
+.div__logo {
+    padding-left: 24px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 50px;
+}
+
+.menu__list-item {
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+    font-weight: 590;
+    font-size: 15px;
+}
+
+.menu__list-link--active {
+    color: rgb(58, 11, 227);
+}
+
+.div__auth {
+    padding-right: 24px;
+}
+
+
+.btn__auth {
+    border-radius: 12px;
+    height: 36px;
+    width: 82px;
+    cursor: pointer;
+    border: none;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+    font-weight: 590;
+    font-size: 15px;
+    background-color: rgba(0, 11, 33, 0.06);
+}
+
+.btn__auth:hover {
+    background-color: rgba(0, 11, 33, 0.1);
+}
+
+.footer {
+    background-color: #eef0f6;
+    padding: 50px 0px 32px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__menu-definition {
+    padding-left: 43px;
+}
+
+.footer__menu-text {
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+.footer__menu-item {
+    margin-bottom: 19px;
+}
+
+.footer__menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.top {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    font-size: 96px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+/* .top__link{
+    background-color: rgba(0,11,33,0.3);
+    padding: 23px;
+    max-width: 250px;
+    width: 100%;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,
+    sans-serif,Helvetica Neue,Helvetica,roboto,arial;
+    border-radius: 20px;
+    border: #151515 solid 2px;
+    color: #fff;
+}
+
+.top__link:hover{
+    background-color: #fff;
+    color: #151515;
+} */
+
+.swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    height: 6px;
+    background-color: #fff;
+}
+
+.sport__info {
+    padding: 150px 0;
+}
+
+.sport__info-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.sport__info-item-img {
+    height: 130px;
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+.sport__info-item-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+/* .sport__info-item-text{
+
+} */
+
+.choose {
+    margin: 100px 0px 150px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+.tabs__btn {
+    padding: 0px 350px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.tabs__btn-item {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.tabs__btn-item--active {
+    color: rgb(58, 11, 227);
+}
+
+.tabs__content-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 120px;
+    justify-items: center;
+}
+
+.card {
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.card__img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+.card__date {
+    margin-bottom: 20px;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+.card__text {
+    font-size: 24px;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+        sans-serif, Helvetica Neue, Helvetica, roboto, arial;
+}
+
+/* Пример стилей для топ-3 организаторов */
+.top-organizers {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.top-organizers h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.organizers-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.organizer {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.organizer-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.organizer-rating {
+    font-size: 16px;
+    color: #555;
+}

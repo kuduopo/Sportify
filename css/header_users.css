@@ -1,0 +1,131 @@
+/* Стили для dropdown контейнера */
+html{
+  box-sizing: border-box;
+}
+
+*, *::after, *::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body{
+  height: 100%;
+}
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  background-color: #eef0f6;
+  
+}
+
+.header__main{
+  position: relative;
+  z-index: 10;
+  left: 0;
+  right: 0;
+}
+
+.header__iner{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo__img{
+  height: 50px;
+  width: 150px;
+}
+
+.div__logo{
+  padding-left: 24px;
+}
+
+.menu__list{
+  display: flex;
+  gap: 50px;
+}
+
+.menu__list-item{
+  font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,
+  sans-serif,Helvetica Neue,Helvetica,roboto,arial;
+  font-weight: 590;
+  font-size: 15px;
+}
+
+.menu__list-link--active{
+  color: rgb(58, 11, 227);
+}
+
+.div__auth{
+  padding-right: 24px;
+}
+
+
+.btn__auth{
+  border-radius: 12px;
+  height: 36px;
+  width: 82px;
+  cursor: pointer;
+  border: none;
+  font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,
+  sans-serif,Helvetica Neue,Helvetica,roboto,arial;
+  font-weight: 590;
+  font-size: 15px;
+  background-color: rgba(0,11,33,0.06);
+}
+
+.btn__auth:hover{
+  background-color: rgba(0,11,33,0.1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Стили для выпадающего контента */
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    right: 0;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 12px;
+}
+
+/* Стили для ссылок в выпадающем контенте */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,
+    sans-serif,Helvetica Neue,Helvetica,roboto,arial;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #d34060;
+  }

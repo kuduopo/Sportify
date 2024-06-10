@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <title>User Authentication</title>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>Добро пожаловать!</h2>
+            <button id="loginTab" onclick="showTab('login')">Login</button>
+            <button id="registerTab" onclick="showTab('register')">Register</button>
+            <form id="loginForm" class="auth-tab" action="login.php" method="post">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="email" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <form id="registerForm" class="auth-tab" action="register.php" method="post" style="display: none;">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required>
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            var tabs = document.getElementsByClassName("auth-tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            document.getElementById(tabName + "Form").style.display = "block";
+        }
+        // Показываем форму входа при загрузке страницы
+        window.onload = function() {
+            showTab('login');
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <button id="aboutButton">Зарегестрироваться</button>
+    <button id="contactButton">Перейти на страницу "Контакты"</button>
+
+    <script>
+        // Обработчики событий для кнопок
+        document.getElementById('aboutButton').addEventListener('click', function() {
+            window.location.href = 'auth.html'; // Переход на страницу "Регистрации"
+        });
+
+        document.getElementById('contactButton').addEventListener('click', function() {
+            window.location.href = 'contact.html'; // Переход на страницу "Контакты"
+        });
+    </script>
+</body>
+</html>
